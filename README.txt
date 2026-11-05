@@ -1,24 +1,14 @@
-FIVEBUCKS PREMIUM HOMEPAGE
-==========================
+FiveBucks premium homepage – fashion update
 
-Files
-- index.html
-- styles.css
-- script.js
+Files: index.html, styles.css, script.js
 
-Preview
-Open index.html in a browser, or deploy the three files to your existing Vercel project.
+What changed:
+- Added Men's Fashion and Women's Fashion collection cards.
+- Added Men and Women product filters and navigation shortcuts.
+- Added four sample fashion products so you can preview the sections.
+- Updated the contact link to usfivebuckstore@gmail.com.
+- Preserved the FiveBucks visual identity and $5 display price.
 
-Update the existing GitHub repository
-1. Open your fivebucks-store repository.
-2. Open each existing file: index.html, styles.css, script.js.
-3. Use the pencil/Edit button, replace the complete contents with the matching new file, and commit the changes.
-   Alternatively, use Add file > Upload files and upload these three files to the repository root, confirming replacement of existing files if prompted.
-4. Vercel should automatically redeploy after the GitHub commit.
+Important: Fashion listings are visual demo products, not confirmed supplier listings. Product images are illustrative. Before accepting orders, replace them with exact supplier images, confirm sizes/materials/stock, and verify that product + US shipping + fees can be covered by the $5 price. The checkout and fulfilment remain demo-only and are not connected.
 
-Important
-- Product listings and images are illustrative sample content.
-- The cart is a front-end demo only.
-- Payment checkout, inventory, shipping rates, email signup and order tracking are not connected.
-- Do not accept customer payments until real products, delivery, refund terms, payment processing and order fulfilment are configured.
-- Product image URLs use Unsplash and require an internet connection.
+To preview locally, open index.html in a browser. To update Vercel, replace the three website files in your GitHub repository; Vercel should redeploy automatically.

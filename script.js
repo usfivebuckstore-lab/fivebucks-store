@@ -4,7 +4,11 @@ const products = [
   {id:'p3',name:'Minimal Desk Organizer',category:'Desk',description:'A calmer home for your little essentials.',tag:'DESK FAVOURITE',image:'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=85'},
   {id:'p4',name:'Reusable Water Bottle',category:'Everyday',description:'A simple sidekick for busy days.',tag:'DAILY ESSENTIAL',image:'https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=900&q=85'},
   {id:'p5',name:'Travel Pouch',category:'On the go',description:'Small-space storage, wherever you go.',tag:'ON THE GO',image:'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=900&q=85'},
-  {id:'p6',name:'Soft Touch Phone Stand',category:'Desk',description:'A handy angle for calls and videos.',tag:'CLEVER LITTLE FIND',image:'https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&w=900&q=85'}
+  {id:'p6',name:'Soft Touch Phone Stand',category:'Desk',description:'A handy angle for calls and videos.',tag:'CLEVER LITTLE FIND',image:'https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&w=900&q=85'},
+  {id:'m1',name:'Classic Everyday T-Shirt',category:'Men',description:'An easy casual staple. Check supplier sizing and fabric before launch.',tag:'MEN’S EVERYDAY',image:'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=85'},
+  {id:'m2',name:'Casual Button Shirt',category:'Men',description:'A relaxed look for everyday plans. Sample listing only.',tag:'MEN’S STYLE',image:'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=900&q=85'},
+  {id:'w1',name:'Women’s Casual Top',category:'Women',description:'An easy-to-style everyday top. Check supplier sizing before launch.',tag:'WOMEN’S EVERYDAY',image:'https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=900&q=85'},
+  {id:'w2',name:'Simple Summer Dress',category:'Women',description:'A light, casual look. Sample listing only.',tag:'WOMEN’S STYLE',image:'https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=900&q=85'}
 ];
 const cart = new Map();
 const grid = document.getElementById('product-grid');
@@ -84,3 +88,12 @@ document.querySelectorAll('.nav a').forEach(link=>link.addEventListener('click',
 document.addEventListener('keydown',event=>{if(event.key==='Escape'){closeCart();document.getElementById('site-nav').classList.remove('open');}});
 document.getElementById('year').textContent=new Date().getFullYear();
 renderProducts();renderCart();
+
+// Direct navigation shortcuts for the new fashion departments.
+document.querySelectorAll('[data-nav-filter]').forEach(link=>link.addEventListener('click',()=>{
+  activeFilter=link.dataset.navFilter;
+  document.querySelectorAll('.filter').forEach(button=>button.classList.toggle('active',button.dataset.filter===activeFilter));
+  renderProducts();
+  document.getElementById('site-nav').classList.remove('open');
+  document.getElementById('menu-toggle').setAttribute('aria-expanded','false');
+}));

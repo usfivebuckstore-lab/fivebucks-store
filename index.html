@@ -19,6 +19,8 @@
     <nav class="nav" id="site-nav" aria-label="Main navigation">
       <a href="#shop">Shop all</a>
       <a href="#collections">Collections</a>
+      <a href="#shop" data-nav-filter="Men">Men</a>
+      <a href="#shop" data-nav-filter="Women">Women</a>
       <a href="#story">Our idea</a>
       <a href="#faq">FAQs</a>
     </nav>
@@ -64,6 +66,8 @@
         <a class="collection-card collection-tech" href="#shop" data-jump-filter="Tech"><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=85" alt="Headphones"><span class="collection-overlay"></span><span class="collection-copy"><small>01 / TECH & GADGETS</small><strong>Little tech.<br>Big help.</strong><b>Explore <span>↗</span></b></span></a>
         <a class="collection-card collection-desk" href="#shop" data-jump-filter="Desk"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=85" alt="Workspace"><span class="collection-overlay"></span><span class="collection-copy"><small>02 / DESK & HOME</small><strong>Make space<br>for better.</strong><b>Explore <span>↗</span></b></span></a>
         <a class="collection-card collection-everyday" href="#shop" data-jump-filter="Everyday"><img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=900&q=85" alt="Reusable bottle"><span class="collection-overlay"></span><span class="collection-copy"><small>03 / EVERYDAY</small><strong>Daily-use<br>favourites.</strong><b>Explore <span>↗</span></b></span></a>
+        <a class="collection-card collection-men" href="#shop" data-jump-filter="Men"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=85" alt="Men's casual T-shirt"><span class="collection-overlay"></span><span class="collection-copy"><small>04 / MEN'S FASHION</small><strong>Everyday<br>style, easy.</strong><b>Explore <span>↗</span></b></span></a>
+        <a class="collection-card collection-women" href="#shop" data-jump-filter="Women"><img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=900&q=85" alt="Women's casual fashion"><span class="collection-overlay"></span><span class="collection-copy"><small>05 / WOMEN'S FASHION</small><strong>Find your<br>own look.</strong><b>Explore <span>↗</span></b></span></a>
       </div>
     </section>
 
@@ -72,7 +76,7 @@
         <div class="section-top shop-heading"><div><div class="eyebrow">THE FIVE-BUCK FINDS</div><h2>Good finds. <em>Great price.</em></h2><p class="section-subtitle">Useful little things, all with one easy-to-remember item price.</p></div>
           <label class="search-field"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><input id="product-search" type="search" placeholder="Search the finds..." aria-label="Search products"></label>
         </div>
-        <div class="filters" id="filters"><button class="filter active" data-filter="All">All finds <span>06</span></button><button class="filter" data-filter="Tech">Tech</button><button class="filter" data-filter="Everyday">Everyday</button><button class="filter" data-filter="Desk">Desk & home</button><button class="filter" data-filter="On the go">On the go</button></div>
+        <div class="filters" id="filters"><button class="filter active" data-filter="All">All finds <span>06</span></button><button class="filter" data-filter="Tech">Tech</button><button class="filter" data-filter="Everyday">Everyday</button><button class="filter" data-filter="Desk">Desk & home</button><button class="filter" data-filter="On the go">On the go</button><button class="filter" data-filter="Men">Men</button><button class="filter" data-filter="Women">Women</button></div>
         <div class="product-grid" id="product-grid" aria-live="polite"></div>
         <div class="catalogue-note"><span>✳</span> Sample product selection. Product availability, shipping and delivery details must be confirmed before launch.</div>
       </div>
@@ -91,13 +95,13 @@
     </section>
 
     <section class="faq shell" id="faq"><div class="eyebrow">GOOD TO KNOW</div><h2>Quick questions.<br><em>Clear answers.</em></h2><div class="faq-list">
-      <details><summary>Is every product really $5? <span>+</span></summary><p>The sample catalogue displays a $5 item price. Any shipping charges and applicable taxes must be shown clearly before a customer pays.</p></details>
-      <details><summary>Is shipping included? <span>+</span></summary><p>Shipping is not currently configured. The final delivery price and estimated delivery window will be displayed before checkout once fulfilment is set up.</p></details>
+      <details><summary>Is every product really $5? <span>+</span></summary><p>Our target price is $5 per item. We will only advertise shipping as included on products after the supplier and delivery costs have been confirmed.</p></details>
+      <details><summary>Is shipping included? <span>+</span></summary><p>Shipping-inclusive pricing is the FiveBucks goal. Actual shipping availability and delivery estimates must be verified for each product before it is offered for sale.</p></details>
       <details><summary>Can I track my order? <span>+</span></summary><p>Order tracking will be available once the store is connected to a real order and fulfilment system.</p></details>
     </div></section>
   </main>
 
-  <footer class="footer"><div class="shell footer-main"><a class="logo footer-logo" href="#home"><span class="logo-symbol">5</span><span class="logo-word">five<span>bucks</span><small>THE EVERYDAY FINDS SHOP</small></span></a><p>Good things for everyday life.<br>One simple item price: $5.</p><div class="footer-nav"><a href="#shop">Shop</a><a href="#story">Our idea</a><a href="#faq">FAQs</a><a href="mailto:hello@fivebucks.example">Contact</a></div></div><div class="shell footer-bottom"><span>© <span id="year"></span> FiveBucks. All rights reserved.</span><span>Good finds. Five bucks.</span></div></footer>
+  <footer class="footer"><div class="shell footer-main"><a class="logo footer-logo" href="#home"><span class="logo-symbol">5</span><span class="logo-word">five<span>bucks</span><small>THE EVERYDAY FINDS SHOP</small></span></a><p>Good things for everyday life.<br>One simple item price: $5.</p><div class="footer-nav"><a href="#shop">Shop</a><a href="#story">Our idea</a><a href="#faq">FAQs</a><a href="mailto:usfivebuckstore@gmail.com">Contact</a></div></div><div class="shell footer-bottom"><span>© <span id="year"></span> FiveBucks. All rights reserved.</span><span>Good finds. Five bucks.</span></div></footer>
 
   <div class="overlay" id="overlay"></div>
   <aside class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-label="Shopping bag"><div class="drawer-head"><div><div class="eyebrow">YOUR FINDS</div><h2>Your bag <span id="drawer-count">(0)</span></h2></div><button class="close-button" id="close-cart" aria-label="Close bag">×</button></div><div class="cart-items" id="cart-items"><div class="empty-cart"><span>✳</span><h3>Your bag is looking a little empty.</h3><p>Find something good for five bucks.</p><button class="button button-dark" id="continue-shopping">Explore finds</button></div></div><div class="drawer-bottom"><div class="subtotal"><span>Items subtotal</span><strong id="subtotal">$0.00</strong></div><p>Shipping and taxes are not included in this demo subtotal.</p><button class="button button-dark checkout-button" id="checkout-button" disabled>Continue <span>↗</span></button><small>Preview store only. Checkout is not connected and no payments are collected.</small></div></aside>
