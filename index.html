@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f7f8fb" />
+  <meta name="description" content="FiveBucks — useful everyday finds for just five dollars each." />
+  <title>FiveBucks — Good finds. Five bucks.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement">A little something good, for just <strong>$5</strong> <span aria-hidden="true">✦</span></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="FiveBucks home"><span class="brand-mark">5</span><span>five<span class="brand-blue">bucks</span><small>GOOD FINDS. FIVE BUCKS.</small></span></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#shop">Shop all</a><a href="#why-five">Why FiveBucks</a><a href="#faq">FAQ</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button search-toggle" aria-label="Focus search" title="Search"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></button>
+      <button class="cart-button" id="open-cart"><svg viewBox="0 0 24 24"><path d="M3 4h2l2.2 10.1a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 8H6"/><circle cx="9.5" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg><span>Bag</span><b id="cart-count">0</b></button>
+      <button class="mobile-menu" id="mobile-menu" aria-label="Open menu"><span></span><span></span></button>
+    </div>
+  </header>
+  <main id="top">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> THE EVERYDAY FINDS CLUB</div>
+        <h1>Good finds.<br><em>Five bucks.</em></h1>
+        <p>Little upgrades, clever essentials, and fun discoveries — all at one feel-good price.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#shop">Explore the finds <span>↗</span></a><div class="hero-note"><span class="sparkle">✳</span><span>Every featured item<br><strong>$5. No guesswork.</strong></span></div></div>
+        <div class="hero-proof"><div class="proof-avatars"><i>J</i><i>M</i><i>A</i></div><span>Small finds. Big everyday energy.</span></div>
+      </div>
+      <div class="hero-art" aria-label="A selection of everyday accessories">
+        <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+        <div class="hero-sticker">ALL<br><strong>$5</strong></div>
+        <div class="hero-product hero-product-main"><img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=900&q=85" alt="Wireless earbuds"/><span>Everyday tech</span></div>
+        <div class="hero-product hero-product-small"><img src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=700&q=85" alt="Minimal desk accessory"/><span>Desk refresh</span></div>
+        <div class="hero-product hero-product-bottom"><img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=700&q=85" alt="Reusable water bottle"/><span>Daily essentials</span></div>
+        <div class="hero-caption">A good little deal<br>is always in style.</div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Store promise"><div>FIVE DOLLAR FINDS <b>✳</b> EVERYDAY ESSENTIALS <b>✳</b> SMALL PRICE, GOOD VIBES <b>✳</b> FIVE DOLLAR FINDS <b>✳</b> EVERYDAY ESSENTIALS <b>✳</b></div></section>
+
+    <section class="shop-section wrap" id="shop">
+      <div class="section-heading"><div><div class="eyebrow">THE GOOD STUFF</div><h2>Find your next <em>favourite.</em></h2></div><label class="search-box"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><input id="product-search" type="search" placeholder="Search the finds..." aria-label="Search products"></label></div>
+      <div class="filter-row" id="filters"><button class="filter active" data-filter="All">All finds <span>06</span></button><button class="filter" data-filter="Tech">Tech</button><button class="filter" data-filter="Everyday">Everyday</button><button class="filter" data-filter="Desk">Desk & home</button><button class="filter" data-filter="On the go">On the go</button></div>
+      <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      <div class="shop-footnote">Every item is listed at $5. Shipping, taxes and final delivery options are shown before payment.</div>
+    </section>
+
+    <section class="why-section" id="why-five"><div class="wrap why-inner"><div><div class="eyebrow">THE FIVEBUCKS WAY</div><h2>Less scrolling.<br><em>More good stuff.</em></h2><p>We keep the shopping simple: a handpicked mix of useful, delightful finds with one easy-to-remember item price.</p></div><div class="why-points"><article><span>01</span><div><h3>One easy item price</h3><p>No complicated pricing games. Featured products are $5 each.</p></div></article><article><span>02</span><div><h3>Useful little discoveries</h3><p>Everyday accessories and clever finds chosen to earn their space.</p></div></article><article><span>03</span><div><h3>Clear before you pay</h3><p>Shipping, taxes, delivery estimates and the final total should always be visible at checkout.</p></div></article></div></div></section>
+
+    <section class="newsletter wrap"><div class="newsletter-icon">✳</div><div><div class="eyebrow">GOOD FINDS, OCCASIONALLY</div><h2>A little inbox <em>treat.</em></h2><p>Get new finds and store updates. No spam, just the good stuff.</p></div><form id="newsletter-form"><label class="sr-only" for="email">Email address</label><input id="email" type="email" placeholder="Your email address" required/><button class="button button-dark" type="submit">Sign me up <span>↗</span></button><small id="newsletter-message">Demo form — connect an email service before launch.</small></form></section>
+
+    <section class="faq-section wrap" id="faq"><div class="eyebrow">GOOD TO KNOW</div><h2>A few quick <em>answers.</em></h2><div class="faq-list"><details><summary>Is every product really $5? <span>+</span></summary><p>Yes. The sample catalogue uses a $5 item price. Shipping and applicable taxes are calculated and displayed separately before payment.</p></details><details><summary>When will my order arrive? <span>+</span></summary><p>Delivery estimates will be shown on the product page and at checkout once a real supplier and shipping service are connected.</p></details><details><summary>Can I track my order? <span>+</span></summary><p>Order tracking will be available after the store is connected to an order-management and fulfilment system.</p></details></div></section>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-top"><a class="brand brand-footer" href="#top"><span class="brand-mark">5</span><span>five<span class="brand-blue">bucks</span><small>GOOD FINDS. FIVE BUCKS.</small></span></a><p>Good finds for everyday life.<br>One simple item price: $5.</p><div class="footer-links"><a href="#shop">Shop</a><a href="#faq">FAQ</a><a href="mailto:hello@fivebucks.example">Contact</a></div></div><div class="wrap footer-bottom"><span>© <span id="year"></span> FiveBucks. All rights reserved.</span><span>Built for curious shoppers.</span></div></footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping bag" aria-modal="true" role="dialog"><div class="drawer-head"><div><div class="eyebrow">YOUR GOOD FINDS</div><h2>Your bag <span id="drawer-count">(0)</span></h2></div><button class="close-button" id="close-cart" aria-label="Close bag">×</button></div><div class="cart-items" id="cart-items"><div class="empty-cart"><div>✳</div><h3>Your bag is taking a break.</h3><p>Add a little something good.</p><button class="button button-dark" id="continue-shopping">Explore finds</button></div></div><div class="drawer-bottom"><div class="subtotal"><span>Items subtotal</span><strong id="subtotal">$0.00</strong></div><p>Shipping and taxes are calculated at checkout.</p><button class="button button-dark checkout-button" id="checkout-button" disabled>Checkout <span>↗</span></button><small>Demo storefront: connect a secure payment provider and fulfilment before accepting orders.</small></div></aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
