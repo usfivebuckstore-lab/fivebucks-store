@@ -19,3 +19,6 @@
 /* FiveBucks fashion collection additions */
 .collection-men img{object-position:center 35%}.collection-women img{object-position:center 30%}
 @media(min-width:851px){.collection-men,.collection-women{height:290px}}
+
+/* Fashion catalogue gallery + demo transparency */
+.product-gallery{display:flex;gap:5px;overflow-x:auto;padding:7px 0 1px;scrollbar-width:thin}.gallery-thumb{flex:0 0 43px;width:43px;height:43px;border:1px solid #e1e2dc;padding:2px;background:#fff;cursor:pointer;border-radius:2px}.gallery-thumb.active{border:2px solid var(--blue)}.gallery-thumb img{width:100%;height:100%;object-fit:cover}.reference-price{display:block;margin-top:7px;font-size:8px;color:#59606a;line-height:1.45}.reference-price span{display:block;color:#92979a;font-size:7px}.demo-catalogue{padding:18px;background:#f0f1ec;border:1px solid #dfe1d8;line-height:1.7}.demo-catalogue strong{letter-spacing:.12em;color:#25282b;font-size:9px}.product-card .product-meta{min-height:100px}
