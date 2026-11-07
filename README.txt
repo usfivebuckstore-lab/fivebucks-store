@@ -1,9 +1,5 @@
-FiveBucks website replacement — Shopify catalogue edition
+FiveBucks storefront — 67 products, every price $5.00 USD
 
-Replace existing repository files with index.html, styles.css, script.js, products.json and products.csv.
-The old demo catalogue is replaced with 67 Shopify-export products. Every storefront price is $5.00 USD.
-Supplier variant prices are preserved in products.json under variants[].supplier_price and do not control retail prices.
-Product images load from Shopify CDN URLs in the export; image files are not downloaded/rehosted here.
-Product cards show up to 8 distinct images per product. Checkout remains a demo and does not process payments.
-Verify supplier stock, shipping, costs and image-use permissions before accepting real orders.
-This package does not deploy or change the live Vercel site. Upload the files to GitHub and commit to main to deploy.
+Upload index.html, styles.css, script.js, data.js, products.json, products.csv to the GitHub repo (replace old files) and commit to main.
+Supplier cost prices were removed from the public files so customers cannot see them. Keep your original products.json privately.
+Images load from the Shopify CDN URLs in your export. Checkout creates an order request email; it does not take payments.
