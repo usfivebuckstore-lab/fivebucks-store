@@ -1,19 +1,22 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#131921"><meta name="description" content="FiveBucks — tech, home, everyday, travel, men’s and women’s fashion. Every item $5.">
-<title>FiveBucks — Every item $5</title><link rel="stylesheet" href="styles.css"></head><body>
-<header><div class="top"><a class="logo" href="#" onclick="setCat('All');return false">Five<b>Bucks</b></a>
-<form class="search" id="sf"><select id="sc" aria-label="Department"></select><input id="sq" placeholder="Search FiveBucks" aria-label="Search"><button aria-label="Search">⌕</button></form>
-<button class="cartb" id="oc">🛒<span id="cc">0</span><em>Cart</em></button></div><nav id="nav"></nav></header>
-<section class="hero"><h1>Every item <span>$5</span>.</h1><p>Hoodies, tech, home finds and more — one simple price. Shipping is confirmed before you pay.</p></section>
-<div class="tiles" id="tiles"></div>
-<div class="layout"><aside class="side"><h3>Department</h3><div id="dep"></div></aside>
-<main><div class="bar"><b id="rc"></b><label>Sort by <select id="so"><option value="f">Featured</option><option value="a">Name: A to Z</option><option value="z">Name: Z to A</option></select></label></div>
-<div class="grid" id="g"></div><button class="more" id="mb">Show more</button></main></div>
-<section class="info"><div><h3>How ordering works</h3><p>Add items to your cart and send your order request. We reply by email with the shipping cost and payment steps — you never pay until you have confirmed the total.</p></div>
-<div><h3>Prices</h3><p>Every item is $5.00 USD. Shipping and any taxes are shown separately before you pay.</p></div>
-<div><h3>Need help?</h3><p>Sizing, orders or returns: <a href="mailto:usfivebuckstore@gmail.com">usfivebuckstore@gmail.com</a></p></div></section>
-<footer>© <span id="yr"></span> FiveBucks · Every item $5</footer>
+<meta name="theme-color" content="#0f1b2d"><meta name="description" content="FiveBucks: everything for just $5. Shop tech, home, everyday essentials, travel gear and fashion.">
+<title>FiveBucks — Everything for just $5</title><link rel="stylesheet" href="styles.css"></head><body>
+<header class="site" id="top"><div class="top">
+<a class="logo" href="index.html" onclick="setCat('All');return false" aria-label="FiveBucks home"><span class="mark">5</span>Five<b>Bucks</b></a>
+<form class="search" id="sf" role="search"><input id="sq" type="search" placeholder="Search products" aria-label="Search products"><button aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4.5 4.5"/></svg></button></form>
+<button class="cartb" id="oc" aria-label="Open cart"><svg viewBox="0 0 24 24"><path d="M3 4h2.5l2.2 11h10.6l2-8H7"/><circle cx="9.5" cy="19.5" r="1.3"/><circle cx="17" cy="19.5" r="1.3"/></svg><span id="cc">0</span></button></div>
+<nav id="nav" aria-label="Categories"></nav></header>
+<section class="hero"><h1>Everything for just $5</h1><p>Tech, home, everyday essentials, travel gear and fashion. Every item is $5.00 USD.</p><a class="btn dark" href="#shop">Shop all products</a></section>
+<section class="wrap" id="cats"><h2>Shop by category</h2><div class="tiles" id="tiles"></div></section>
+<section class="wrap" id="shop"><div class="layout"><aside class="side"><h3>Categories</h3><div id="dep"></div></aside>
+<main><div class="bar"><h2 id="rt">All products</h2><span class="mu" id="rc"></span><label class="sort">Sort <select id="so"><option value="f">Featured</option><option value="a">Name: A to Z</option><option value="z">Name: Z to A</option></select></label></div>
+<div class="grid" id="g"></div><button class="more" id="mb">Show more</button></main></div></section>
+<footer><div class="fwrap"><div><a class="logo" href="index.html"><span class="mark">5</span>Five<b>Bucks</b></a><p>Everything for just $5.</p></div>
+<div><h4>Shop</h4><a href="#cats">Categories</a><a href="#shop">All products</a></div>
+<div><h4>Help</h4><a href="shipping.html">Shipping</a><a href="returns.html">Returns</a><a href="mailto:usfivebuckstore@gmail.com">Contact us</a></div>
+<div><h4>Legal</h4><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></div></div>
+<div class="copy">© <span id="yr"></span> FiveBucks. All prices in USD.</div></footer>
 <div class="ov" id="pv"><div class="modal" id="pm"></div></div>
 <div class="ov" id="co"><form class="modal one" id="cf"></form></div>
 <aside class="drawer" id="dr" aria-label="Cart"></aside>
